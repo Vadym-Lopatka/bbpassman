@@ -70,3 +70,6 @@ package-lock.json
 /package.json
 *.log
 src/dev/shadow-css-index.edn
+
+bbpassman.db
+bbpassman.stash

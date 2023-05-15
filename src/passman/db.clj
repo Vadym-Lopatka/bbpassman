@@ -18,6 +18,11 @@
                                           [[:unique nil :url :username]]])
                          (sql/format)))))
 
+
+
+(create-db!)
+
+
 (defn insert-password [url username]
   (sqlite/execute! db-name
                    (-> (h/insert-into :passwords)
