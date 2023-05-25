@@ -1,11 +1,17 @@
-#!/user/bin/zsh
+### The main idea of this script is to make
+### easier the runnig process of this app
+### (still need to fix to make it work)
 
-bb uberscript src/passman/app -m passman.app
+# #!/user/bin/zsh
 
-mkdir -p out
 
-awk 'BEGIN{print "#!/user/bin/env bb\n"}{print}' src/passman/app > out/passman
 
-chmod +x out/passman
+# bb uberscript src/passman/app -m passman.app
 
-rm src/passman/app
+# mkdir -p out
+
+# awk 'BEGIN{print "#!/user/bin/env bb\n"}{print}' src/passman/app > out/passman
+
+# chmod +x out/passman
+
+# rm src/passman/app
