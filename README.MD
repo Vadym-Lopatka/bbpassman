@@ -6,7 +6,7 @@ Please,
 ## Tech stack
 - Clojure
 - Babashka
-- SqlLite DB
+- SqlLite DB and HoneySql
 - Stash (encrypted text storage)
 
 ## Usage
@@ -16,15 +16,4 @@ Please,
 $ bb -m passman.app
 ```
 
-2. Create DB and the "redirects" table via pgsql or another tool you prefer
-
-```pgsql> 
-CREATE DATABASE shorturl;
-```
-
-```pgsql> 
-CREATE TABLE redirects(
-  slug varchar(10) PRIMARY KEY NOT NULL,
-  url varchar(1000) NOT NULL                     
-);
-```
+2. TODO: Add list of commands
